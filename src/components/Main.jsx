@@ -3,7 +3,7 @@ import { ReactSection } from './TextSections/ReactSection/ReactSection'
 import { TextSection } from './TextSections/TextSection/TextSection'
 import { ViteSection } from './TextSections/ViteSection/ViteSection'
 import nextImage from '../assets/next.jpg'
-nextObj = {
+const next = {
     sectionId: 'Next',
     imgPath: nextImage,
     sectionTitle: 'Next - framework',
@@ -32,6 +32,7 @@ nextObj = {
 const Main = () => {
     return (
         <>
+            <ReactSection />
             <TextSection
                 sectionId={next.sectionId}
                 imgPath={next.imgPath}
@@ -40,8 +41,6 @@ const Main = () => {
                 listTitle={next.listTitle}
                 listContent={next.listContent}
             />
-            <ReactSection />
-            <NextSection />
             <ViteSection />
         </>
     )
