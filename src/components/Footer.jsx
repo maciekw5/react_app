@@ -1,13 +1,14 @@
-function Footer() {
-	const footerYear = () => {};
+'use server'
 
-	return (
-		<>
-			<footer className='footer'>
-				<p className='footer-text'>Maciej Wojciechowski</p>
-			</footer>
-		</>
-	);
+function Footer() {
+    const footerYear = new Date().getFullYear()
+    return (
+        <footer className="footer">
+            <p className="footer-text">
+                Maciej Wojciechowski <span>{footerYear}</span>
+            </p>
+        </footer>
+    )
 }
 
-export default Footer;
+export default Footer
