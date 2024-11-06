@@ -1,6 +1,18 @@
 .counter {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 10em;
+	background-color: #222;
+}
+
+.btn-style {
+	padding: 0.5em 1em;
+	margin: 0.5em;
+	color: #fff;
+	background: none;
+	border-radius: 10px;
+	border: 1px solid #fff;
+	cursor: pointer;
 }

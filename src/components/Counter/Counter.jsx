@@ -1,25 +1,32 @@
-import { useState } from 'react'
-import styles from './Counter.module.scss'
+import { useState } from 'react';
+import styles from './Counter.module.scss';
 
 const Counter = () => {
-    const [count, setCount] = useState(0)
+	const [countState, setCountState] = useState(0);
 
-    const increment = () => {
-        setCount(count + 1)
-    }
+	const increment = () => {
+		setCountState(countState + 1);
+	};
 
-    const decrement = () => {
-        setCount(count - 1)
-    }
+	const decrement = () => {
+		setCountState(countState - 1);
+	};
 
-    return (
-        <div className={styles.counter}>
-            <h1>Counter App</h1>
-            <p>Count: {count}</p>
-            <button onClick={increment}>Increment</button>
-            <button onClick={decrement}>Decrement</button>
-        </div>
-    )
-}
+	console.log('Kompiluje się😊');
 
-export default Counter
+	return (
+		<div className={styles.counter}>
+			<div>Aktualny count: {countState}</div>
+			<div>
+				<button className={styles['btn-style']} onClick={increment}>
+					Zwieksz:{' '}
+				</button>
+				<button className={styles['btn-style']} onClick={decrement}>
+					Zmniejsz:{' '}
+				</button>
+			</div>
+		</div>
+	);
+};
+
+export default Counter;
