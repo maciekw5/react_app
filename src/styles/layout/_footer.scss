@@ -1,0 +1,7 @@
+@use '../variables' as variables;
+
+.footer {
+	padding: 2em 0;
+	background-color: variables.$secondary-color;
+	text-align: center;
+}

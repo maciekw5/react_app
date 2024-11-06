@@ -1,0 +1,104 @@
+@use './variables' as variables;
+
+// Wrapper
+
+.wrapper {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+// Buttons
+.btn {
+	font-size: 1.6rem;
+	padding: 0.6em 1.2em;
+	border-radius: 2rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.primary-btn {
+	background-color: variables.$primary-color;
+}
+
+.primary-btn:hover,
+.primary-btn:focus {
+	background-color: variables.$primary-hover;
+}
+
+.secondary-btn {
+	background-color: variables.$pure-white;
+}
+
+.secondary-btn:hover,
+.secondary-btn:focus {
+	background-color: variables.$secondary-hover;
+}
+
+// Sections
+
+.span-color {
+	font-weight: 800;
+	text-decoration: underline;
+	color: variables.$primary-color;
+}
+
+.section {
+	color: variables.$pure-white;
+}
+
+.section-img {
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+.section-padding {
+	padding: 3em;
+}
+
+.section-title {
+	font-size: 2rem;
+	margin-bottom: 1em;
+	font-weight: 800;
+}
+
+.section-box__text,
+.section-box__list-item {
+	line-height: 1.5;
+}
+.section-box__list-title {
+	margin-top: 1.5em;
+	color: variables.$primary-hover;
+}
+.section-box__list-item {
+	margin: 0.5em 0 0 2.5em;
+}
+
+@media (min-width: 768px) {
+	.section-padding {
+		padding: 3.5em;
+	}
+
+	.section-title {
+		font-size: 2.5rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.btn {
+		font-size: 2rem;
+	}
+
+	.section-padding {
+		padding: 5em;
+	}
+
+	.section-title {
+		font-size: 3rem;
+		margin-bottom: 1em;
+	}
+}

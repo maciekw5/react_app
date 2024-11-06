@@ -1,0 +1,37 @@
+@use '../variables' as variables;
+
+.nav {
+	position: fixed;
+	top: 0;
+	padding: 1.5em 3em;
+	width: 100%;
+	background-color: variables.$background-1;
+    box-shadow: 0 0 8px variables.$pure-black;
+}
+
+.nav-item {
+	position: relative;
+	text-decoration: none;
+	color: variables.$primary-color;
+	margin: 0 1em;
+	font-size: 1.8rem;
+
+	&::after {
+		position: absolute;
+		content: '';
+		bottom: 0;
+		left: 0;
+		height: 2px;
+		width: 100%;
+		border-radius: 2rem;
+		background-color: variables.$primary-color;
+		transform: scaleX(0);
+		transform-origin: right;
+		transition: transform 0.3s;
+	}
+
+	&:hover::after {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+}

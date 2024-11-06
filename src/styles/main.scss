@@ -1,0 +1,11 @@
+@use './reset';
+@use './components';
+@use './layout/header';
+@use './layout/main';
+@use './layout/footer';
+@use './layout/nav';
+@use './variables' as variables;
+
+body {
+	font-size: 1.6rem;
+}
