@@ -12,17 +12,15 @@ const Counter = () => {
 		setCountState(countState - 1);
 	};
 
-	console.log('Kompiluje się😊');
-
 	return (
 		<div className={styles.counter}>
-			<div>Aktualny count: {countState}</div>
+			<div className={styles.counter_title}>Aktualny count: {countState}</div>
 			<div>
-				<button className={styles['btn-style']} onClick={increment}>
-					Zwieksz:{' '}
+				<button className={styles.btn_style} onClick={increment}>
+					+{' '}
 				</button>
-				<button className={styles['btn-style']} onClick={decrement}>
-					Zmniejsz:{' '}
+				<button className={styles.btn_style} onClick={decrement}>
+					-{' '}
 				</button>
 			</div>
 		</div>

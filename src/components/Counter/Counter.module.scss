@@ -4,15 +4,31 @@
 	flex-direction: column;
 	align-items: center;
 	padding: 10em;
-	background-color: #222;
+	background-color: #000000;
+	color: #fff;
 }
 
-.btn-style {
+.btn_style {
 	padding: 0.5em 1em;
+	font-size: 2rem;
+	font-weight: 600;
 	margin: 0.5em;
 	color: #fff;
 	background: none;
 	border-radius: 10px;
 	border: 1px solid #fff;
 	cursor: pointer;
+	transition: background-color .3s;
+
+	&:hover,
+	&:focus {
+		outline: none;
+		background-color: rgba(255, 255, 255, .1);
+	}
+}
+
+.counter_title {
+	font-size: 2rem;
+	font-weight: 800;
+	margin-bottom: 1em;
 }
