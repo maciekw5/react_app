@@ -1,13 +1,13 @@
-@use '../variables' as variables;
+@use "../variables" as variables;
 
 .section-react {
-	background-color: variables.$background-2;
+  background-color: variables.$background-2;
 }
 
 .section-next {
-	background-color: variables.$background-1;
+  background-color: variables.$background-1;
 }
 
 .section-vite {
-	background-color: variables.$background-2;
+  background-color: variables.$background-2;
 }

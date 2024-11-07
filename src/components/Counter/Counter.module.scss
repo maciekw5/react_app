@@ -1,18 +1,32 @@
 .counter {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	padding: 10em;
-	background-color: #222;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10em;
+  background-color: #ddd;
 }
 
-.btn-style {
-	padding: 0.5em 1em;
-	margin: 0.5em;
-	color: #fff;
-	background: none;
-	border-radius: 10px;
-	border: 1px solid #fff;
-	cursor: pointer;
+.btn_style {
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  color: #fff;
+  background: none;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.count_info {
+  font-size: 2rem;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+
+.increment_btn {
+  background-color: rgb(5, 202, 2);
+}
+
+.decrement_btn {
+  background-color: red;
 }
